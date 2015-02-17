@@ -1,0 +1,11 @@
+target remote | ${HOME}/ocd/bin/openocd  -c "gdb_port pipe; log_output config/openocd.log" -f config/cc3200.cfg
+
+define hook-quit
+    set confirm off
+end
+
+load
+set $sp = g_pfnVectors[0]
+set $pc = g_pfnVectors[1]
+#break main
+continue
