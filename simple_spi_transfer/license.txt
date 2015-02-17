@@ -1,17 +1,3 @@
-# cc3200_dma_spi_example
-
-Here are two examples that show how to use SPI with DMA and FIFO on the CC3200. I hope that they are a useful starting point for anyone, who wants to work on SPI and DMA in the future.
-
-The examples are compiling fine on Linux with gcc 4.9.3 from http://launchpad.net/gcc-arm-embedded. All you need to change is the path for the SDK in the Makefile.
-The hardware setup is similar to the SPI example in the SDK: just connect two CC3200 via cable (Pins GND, P05, P06, P07 and P08). I have set the following jumpers: J6, J7, J8. J9. J10, J11, J12, J13.
-
-simple_spi_transfer is an example of an SPI transfer without DMA and FIFO. The master sends a buffer to the slave, reads it back in the next transfers and verifies the checksums.
-
-transfer_1024_byte implements a simple SPI/DMA transfer that will transfer 1024 (or whatever DMA_SIZE is set to) bytes from the master to the slave and back. It then calculates the buffer's CRC checksum and (on the master) compares the send checksum to the received checksum.
-
-transfer_64k shows how to transfer a 64k buffer from the master to the slave and back again.
-
-# License
 Copyright (c) 2015, Severin Kacianka (severin at kacianka dot at)
 All rights reserved.
 
