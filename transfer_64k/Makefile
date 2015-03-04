@@ -10,7 +10,7 @@
 # be used as a reference and starting point for more 'automagic' Makefiles.
 # You might want to run 'make -n' in the SDK examples and compare the output
 
-SDK=/home/severin/CC3200_SDK/cc3200-sdk
+SDK=${HOME}/CC3200_SDK/cc3200-sdk
 SRC=./src
 BUILD=./obj
 BIN=./bin

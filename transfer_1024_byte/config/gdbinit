@@ -1,4 +1,4 @@
-target remote | ${HOME}/ocd/bin/openocd  -c "gdb_port pipe; log_output config/openocd.log" -f config/cc3200.cfg
+target remote | ${HOME}/ocd/bin/openocd  -c "gdb_port pipe; log_output bin/openocd.log" -f config/cc3200.cfg
 
 define hook-quit
     set confirm off
