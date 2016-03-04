@@ -11,6 +11,9 @@ transfer_1024_byte implements a simple SPI/DMA transfer that will transfer 1024 
 
 transfer_64k shows how to transfer a 64k buffer from the master to the slave and back again.
 
+windows contains a Makefile send to me by Matt van de Werken that also works
+using the Launchpad tools in a Cygwin enviroment
+
 # License
 Copyright (c) 2015, Severin Kacianka (severin at kacianka dot at)
 All rights reserved.
